@@ -1,5 +1,6 @@
 header {
     background-color: #254135;
+    padding-bottom: 150px;
     
     p {
         color: white;
@@ -9,11 +10,50 @@ header {
 h1 {
     color: white;
     text-align: left;
+    font-size: 5.625rem;
     
     .headingSpan1 {
         color: #D2F34C;
     }
     .headingSpan2 {
         color: #A0B646;
+    }
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerRight {
+    position: relative;
+}
+
+.headerRectangleContainer {
+    position: absolute;
+    height: 731px;
+    width: 596px;
+    overflow: hidden;
+    top: 42px;
+    right: 40px;
+
+    .headerRectangle {
+        position: absolute;
+    }
+}
+
+
+.headerImageContainer {
+    position: absolute;
+    height: 731px;
+    width: 596px;
+    overflow: hidden;
+    top: 80px;
+    right: -10px;
+    
+    .headerImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

@@ -13,7 +13,7 @@ function App() {
     const handleChange = (e) => {
         const {name, value} = e.target
 
-        setSearchInput((prev) => {
+        setUserSearch((prev) => {
             return {...prev, [name]: value}
         })
     }
