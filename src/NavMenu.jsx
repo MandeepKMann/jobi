@@ -1,6 +1,7 @@
-import './NavMenu.css'
-import Logo from './assets/homeAssets/logo.png'
-import Scribble from './assets/homeAssets/scribble.png'
+import './NavMenu.css';
+import Logo from './assets/homeAssets/logo.png';
+import Scribble from './assets/homeAssets/scribble.png';
+import Category from './assets/homeAssets/category.png';
 
 const NavMenu = () => {
     return (
@@ -11,7 +12,10 @@ const NavMenu = () => {
                         <img src={Logo} alt="" />
                         <h2>jobi</h2>
                     </div>
-                    <button>Category</button>
+                    <button className='category'>
+                        <img src={Category} alt="" />
+                        Category
+                    </button>
                     <ul className="navLinks">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Jobs</a></li>

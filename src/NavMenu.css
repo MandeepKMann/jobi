@@ -16,16 +16,21 @@ nav {
 }
 
 .navLeft {
-    gap: 30px;
+    gap: 10%;
 }
 
 .navLeft button {
-    align-self: center;
+    display: flex;
     color: #D2F34C;
     border-radius: 15px;
     background-color: #31795A;
     border: none;
-    padding: 4px 8px;
+    padding: 4px 12px;
+    gap: 5px;
+}
+
+.navLeft img {
+    align-self: center;
 }
 
 .logo {
