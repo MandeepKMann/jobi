@@ -1,4 +1,4 @@
-import './NavMenu.css';
+import './NavMenu.scss';
 import Logo from './assets/homeAssets/logo.png';
 import Scribble from './assets/homeAssets/scribble.png';
 import Category from './assets/homeAssets/category.png';

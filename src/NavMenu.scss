@@ -1,0 +1,54 @@
+nav {
+    background-color: #254135;
+    padding: 10px 0px;
+    
+    ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    a {
+        color: white;
+    }
+}
+
+.navFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLeft,
+.navRight {
+    display: flex;
+    align-items: center;
+}
+
+.navLeft {
+    gap: 10%;
+
+    button {
+        display: flex;
+        color: #D2F34C;
+        border-radius: 15px;
+        background-color: #31795A;
+        border: none;
+        padding: 4px 12px;
+        gap: 5px;
+    }
+    
+    img {
+        align-self: center;
+    }
+}
+
+
+
+.logo {
+    display: flex;
+    gap: 8px;
+    
+    h2 {
+        color: white;
+    }
+}
