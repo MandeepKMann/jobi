@@ -1,0 +1,55 @@
+@import './styles/variables.scss';
+
+.demandingCategories {
+    background-color: $lightYellow;
+    padding: 100px 0px 100px 0px;
+}
+
+.categoriesText {
+    display: flex;
+
+    .categoriesLeft,
+    .categoriesRight {
+        width: 50%;
+        margin-top: 70px;
+
+        h2 {
+            margin-top: 0px;
+        }
+
+        a {
+            border-bottom: 1px solid $appleGreen;
+            color: $appleGreen;
+            line-height: 23px;
+        }
+    }
+
+}
+
+.categoriesLinks ul{
+    display: flex;
+    justify-content: space-between;
+    
+    li {
+        background-color: white;
+        border-radius: 60px;
+        text-align: center;
+        display: flex;
+        gap: 10px;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 35px;
+            border-radius: 60px;
+
+            &:hover,
+            &:focus {
+                background-color: $limeGreen;
+            }
+        }
+
+    }
+}

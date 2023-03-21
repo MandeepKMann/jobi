@@ -11,7 +11,7 @@ import Accounting from './assets/homeAssets/accounting.png'
 const Categories = () => {
     return (
         <section className="demandingCategories">
-            <div className="categoriesText">
+            <div className="categoriesText wrapper">
                 <div className="categoriesLeft">
                     <h2>Most Demanding Categories.</h2>
                     <img src={Fireworks} alt="" />
@@ -21,7 +21,7 @@ const Categories = () => {
                     <a href="">Explore all fields &gt;</a>
                 </div>
             </div>
-            <div className="categoriesLinks">
+            <div className="categoriesLinks wrapper">
                 <ul>
                     <li>
                         <a href="">

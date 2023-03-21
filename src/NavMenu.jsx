@@ -10,7 +10,7 @@ const NavMenu = () => {
                 <div className="navLeft">
                     <div className="logo">
                         <img src={Logo} alt="" />
-                        <h2>jobi</h2>
+                        <h3>jobi</h3>
                     </div>
                     <button className='category'>
                         <img src={Category} alt="" />

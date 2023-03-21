@@ -1,3 +1,5 @@
+@import './styles/variables.scss';
+
 header {
     background-color: #254135;
     height: 100vh;
@@ -10,13 +12,13 @@ header {
 h1 {
     color: white;
     text-align: left;
-    font-size: 5rem;
+    font-size: 4.5rem;
     
     .headingSpan1 {
-        color: #D2F34C;
+        color: $limeGreen;
     }
     .headingSpan2 {
-        color: #A0B646;
+        color: $appleGreen;
     }
 }
 
@@ -75,5 +77,5 @@ h1 {
 
 
 .faded {
-    color: #C4C4C4;
+    color: $grey;
 }
