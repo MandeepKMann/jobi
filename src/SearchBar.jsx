@@ -4,13 +4,18 @@ const SearchBar = () => {
     return (
         <div className="form wrapper">
             <form action="#">
-                <label htmlFor="userSearch">What are you looking for?</label>
-                <input type="text" />
-                <select name="" id=""></select>
-                <label htmlFor=""></label>
-                <select name="" id="">
-                    <option value="">Web Design</option>
-                </select>
+                <div className="inputs">
+                    <div className="textInput">
+                        <label htmlFor="userSearch">What are you looking for?</label>
+                        <input type="text" />
+                    </div>
+                    <div className="selectInput">
+                        <label htmlFor="">Category</label>
+                        <select name="" id="">
+                            <option value="">Web Design</option>
+                        </select>
+                    </div>
+                </div>
                 <button type='submit'>SEARCH</button>
             </form>
         </div>
