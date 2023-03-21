@@ -2,7 +2,7 @@ import './SearchBar.scss';
 
 const SearchBar = () => {
     return (
-        <div className="form wrapper">
+        <div className="form">
             <form action="#">
                 <div className="inputs">
                     <div className="textInput">

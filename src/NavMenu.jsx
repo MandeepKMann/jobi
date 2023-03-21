@@ -6,7 +6,7 @@ import Category from './assets/homeAssets/category.png';
 const NavMenu = () => {
     return (
         <nav>
-            <div className="navFlex wrapper">
+            <div className="navFlex headerWrapper">
                 <div className="navLeft">
                     <div className="logo">
                         <img src={Logo} alt="" />
