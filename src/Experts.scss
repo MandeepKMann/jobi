@@ -1,0 +1,101 @@
+@import './styles/variables.scss';
+
+.talentedExperts {
+    background-color: white;
+    display: flex;
+    padding: 100px 0px;
+
+    .expertsCollage,
+    .expertsText {
+        width: 50%;
+        
+        h2 {
+            color: $darkGreen;
+            margin-top: 0px;
+        }
+    }
+}
+
+.expertsCollage {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    .blockContainer1 {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 321px;
+        max-height: 197px;
+        border-radius: 50px 0px 50px 0px;
+        
+        img {
+            border-radius: 50px 0px 50px 0px;
+            object-fit: contain;
+            max-width: 95%;
+        }
+    }
+
+    .dotsContainer {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blockContainer2 {
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 195px;
+        max-height: 175px;
+        border-radius: 0px 50px 0px 50px;
+
+        img {
+            border-radius: 0px 50px 0px 50px;
+            object-fit: contain;
+            max-width: 100%;
+        }
+    }
+
+    .blockContainer3 {
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 296px;
+        max-height: 323px;
+        border-radius: 50px 0px 50px 0px;
+
+        img {
+            border-radius: 50px 0px 50px 0px;
+            object-fit: contain;
+            max-width: 100%;
+        }
+    }
+}
+
+.collageTop {
+    display: flex;
+    gap: 68px;
+}
+.collageBottom {
+    display: flex;
+    gap: 48px;
+}
+
+.expertsText {
+    p {
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    ul {
+        font-weight: bold;
+        
+        li:before {
+                content: '✓ ';
+            }
+    }
+}
