@@ -1,6 +1,6 @@
 import './Categories.scss'
 
-import Fireworks from './assets/homeAssets/Fireworks.png'
+import Fireworks from './assets/homeAssets/fireworks.png'
 import Pencil from './assets/homeAssets/pencil.png'
 import Dev from './assets/homeAssets/dev.png'
 import Marketing from './assets/homeAssets/marketing.png'

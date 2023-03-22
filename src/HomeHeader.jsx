@@ -2,7 +2,7 @@ import NavMenu from "./NavMenu.jsx";
 import SearchBar from "./SearchBar.jsx"
 import './HomeHeader.scss';
 import HeaderRectangle from './assets/homeAssets/headerRectangle.png';
-import HeaderImage from './assets/homeAssets/HeaderImage.jpg'
+import HeaderImage from './assets/homeAssets/headerImage.jpg'
 
 const HomeHeader = () => {
     return (
