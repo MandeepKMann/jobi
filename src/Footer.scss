@@ -1,0 +1,16 @@
+@import './styles/variables.scss';
+
+.footerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerLists {
+    display: flex;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
