@@ -6,7 +6,7 @@ import Marketing from './assets/homeAssets/marketing.png';
 import Telemarketing from './assets/homeAssets/telemarketing.png';
 import Editing from './assets/homeAssets/editing.png';
 import Accounting from './assets/homeAssets/accounting.png';
-import Fireworks from './assets/homeAssets/fireworks.png';
+// import Fireworks from './assets/homeAssets/fireworks.png';
 
 const Categories = () => {
     return (
@@ -15,7 +15,7 @@ const Categories = () => {
                 <div className="categoriesLeft">
                     <h3>Most Demanding Categories.</h3>
                     <div className="fireworks">
-                        <img src={Fireworks} alt="" />
+                        {/* <img src={Fireworks} alt="" /> */}
                     </div>
                 </div>
                 <div className="categoriesRight">
