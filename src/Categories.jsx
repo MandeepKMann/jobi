@@ -14,7 +14,9 @@ const Categories = () => {
             <div className="categoriesText wrapper">
                 <div className="categoriesLeft">
                     <h3>Most Demanding Categories.</h3>
-                    <img src={Fireworks} alt="" />
+                    <div className="fireworks">
+                        <img src={Fireworks} alt="" />
+                    </div>
                 </div>
                 <div className="categoriesRight">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam corrupti tenetur sit similique dolorum nobis.</p>
