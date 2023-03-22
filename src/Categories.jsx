@@ -1,12 +1,12 @@
-import './Categories.scss'
+import './Categories.scss';
 
-import Fireworks from './assets/homeAssets/fireworks.png'
-import Pencil from './assets/homeAssets/pencil.png'
-import Dev from './assets/homeAssets/dev.png'
-import Marketing from './assets/homeAssets/marketing.png'
-import Telemarketing from './assets/homeAssets/telemarketing.png'
-import Editing from './assets/homeAssets/editing.png'
-import Accounting from './assets/homeAssets/accounting.png'
+import Pencil from './assets/homeAssets/pencil.png';
+import Dev from './assets/homeAssets/dev.png';
+import Marketing from './assets/homeAssets/marketing.png';
+import Telemarketing from './assets/homeAssets/telemarketing.png';
+import Editing from './assets/homeAssets/editing.png';
+import Accounting from './assets/homeAssets/accounting.png';
+import Fireworks from './assets/homeAssets/fireworks.png';
 
 const Categories = () => {
     return (
