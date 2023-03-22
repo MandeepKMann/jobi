@@ -13,7 +13,7 @@ const Categories = () => {
         <section className="demandingCategories">
             <div className="categoriesText wrapper">
                 <div className="categoriesLeft">
-                    <h2>Most Demanding Categories.</h2>
+                    <h3>Most Demanding Categories.</h3>
                     <img src={Fireworks} alt="" />
                 </div>
                 <div className="categoriesRight">

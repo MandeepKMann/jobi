@@ -10,7 +10,7 @@ const Collaboration = () => {
                 <p>TOP BRAND</p>
                 <h2>Collaboration with Top Brands.</h2>
                 <p>We collaborate with a numnber of top tier companies on imagining the future of work.</p>
-                <a href="#">Learn more</a>
+                <a href="#">Learn more &#10230;</a>
             </div>
         </section>
     )

@@ -14,11 +14,11 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="footerBottom wrapper">
-                <div>
+            <div className="footerMiddle wrapper">
+                <div className='footerMiddleFlex'>
                     <div>
                         <img src="" alt="" />
-                        <h5></h5>
+                        <h5>jobi</h5>
                     </div>
                     <div className="footerLists">
                         <ul>
@@ -45,7 +45,7 @@ const Footer = () => {
                             <li><a href="">Cookie policy</a></li>
                         </ul>
                     </div>
-                    <div className="newslette">
+                    <div className="newsletter">
                         <h6>Newsletter</h6>
                         <p>Join and get important news regularly</p>
                         <form action="#">
@@ -57,8 +57,17 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="copyright">
-                
+            <div className="footerBottom">
+                <div className="terms">
+                    <p>Privacy & Terms.</p>
+                    <p>Contact Us</p>
+                </div>
+                <p className="copyRight">Copyright @2022 jobi inc.</p>
+                <ul className="footerBottomLinks">
+                    <li><a href=""><img src="" alt="" /></a></li>
+                    <li><a href=""><img src="" alt="" /></a></li>
+                    <li><a href=""><img src="" alt="" /></a></li>
+                </ul>
             </div>
         </footer>
     )

@@ -7,15 +7,10 @@
 
 .categoriesText {
     display: flex;
-
+    justify-content: space-between;
     .categoriesLeft,
     .categoriesRight {
-        width: 50%;
         margin-top: 70px;
-
-        h2 {
-            margin-top: 0px;
-        }
 
         a {
             border-bottom: 1px solid $appleGreen;
@@ -23,7 +18,31 @@
             line-height: 23px;
         }
     }
+    
+}
 
+.categoriesLeft {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50%;
+
+    h3 {
+        margin-top: 0px;
+        font-size: 3.6rem;
+        color: $darkGreen;
+    }
+
+    img {
+        position: absolute;
+        right: 140px;
+        top: -30px;
+    }
+    
+}
+
+.categoriesRight {
+    width: 42.75%;
 }
 
 .categoriesLinks ul{
@@ -48,6 +67,16 @@
             &:hover,
             &:focus {
                 background-color: $limeGreen;
+            }
+
+            h4 {
+                color: $black;
+                font-size: 0.9rem;
+            }
+
+            p {
+                color: $appleGreen;
+                font-size: 0.7rem;
             }
         }
 
