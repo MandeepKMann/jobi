@@ -2,6 +2,7 @@ import HomeHeader from "./HomeHeader"
 import Categories from "./Categories"
 import Experts from "./Experts";
 import About from "./About";
+import HomeCarousels from "./HomeCarousels";
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
                 <Categories />
                 <Experts />
                 <About />
+                <HomeCarousels />
             </main>
         </>
     )
