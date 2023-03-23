@@ -1,4 +1,7 @@
-const HomeCarousels = () => {
+import { urlFor } from './sanity';
+
+const HomeCarousels = ({talent}) => {
+
     return (
         <>
             <section className="talentCarousel wrapper">
@@ -8,7 +11,19 @@ const HomeCarousels = () => {
 
             <section className="reviewCarousel wrapper">
                 <h2>Trusted by leading startups.</h2>
-                    {/* Map through review data for carousel */}
+                    {talent.map((person) => {
+                        return (
+                            <div key={person._id}>
+                                <div className="talentImg">
+                                    <img src={urlFor(person.portrait)} alt={`a picture of ${person.name}`} />
+                                </div>
+                                <div className="talentInfo">
+                                    <h5>{person.name}</h5>
+                                    <p>{person.role}</p>
+                                </div>
+                            </div>
+                        )
+                    })}
                 <div className="partnerLogos">
                     {/* images for partner logos */}
                 </div>
