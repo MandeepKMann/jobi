@@ -13,10 +13,15 @@ const getTalent = async () => {
   return talentList;
 }
 
+const getReview = async () => {
+    const reviewList = await client.fetch('*[_type == "review"]')
+    return reviewList;
+}
+
 const builder = imageUrlBuilder(client);
 
 const urlFor = (asset) => {
   return builder.image(asset);
 };
 
-export { client, getTalent, urlFor };
+export { client, getTalent, getReview, urlFor };

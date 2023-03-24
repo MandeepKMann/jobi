@@ -39,12 +39,20 @@
     }
 }
 
+.talentCarousel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .talentInner {
     overflow: hidden;
-    width: auto;
     display: flex;
     align-items: center;
-    gap: 134.5px;
+    justify-content: space-between;
+    gap: 8.8%;
+    max-width: 100%;
+    white-space: nowrap;
 }
 
 .talentCard {
@@ -55,9 +63,9 @@
     text-align: center;
     height: 500px;
     max-width: 280px;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
+    width: calc(100% / 4);
 }
-
 .talentImg {
     width: 280px;
     max-width: 280px;
