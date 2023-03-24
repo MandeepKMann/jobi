@@ -3,6 +3,40 @@
 .talentSection {
     display: flex;
     flex-direction: column;
+
+    .talentTitle {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        h2 {
+            max-width: 50%;
+        }
+
+    }
+}
+
+.talentButtons {
+    margin-bottom: 74.7px;
+    display: flex;
+    gap: 20px;
+
+    button {
+        background-color: white;
+        border: none;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover,
+        &:focus {
+            background-color: $limeGreen;
+        }
+    }
 }
 
 .talentInner {
@@ -10,8 +44,7 @@
     width: auto;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 135px;
+    gap: 134.5px;
 }
 
 .talentCard {
@@ -21,7 +54,6 @@
     align-items: center;
     text-align: center;
     height: 500px;
-    width: 100%;
     max-width: 280px;
     transition: transform 0.3s;
 }
@@ -32,7 +64,7 @@
     height: 400px;
     max-height: 400px;
     overflow: hidden;
-    border-radius: 100px;
+    border-radius: 150px;
     
     img {
         width: 100%;

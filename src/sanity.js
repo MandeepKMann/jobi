@@ -8,7 +8,7 @@ const client = createClient({
   apiVersion: '2021-03-25'
 });
 
-async function getTalent() {
+const getTalent = async () => {
   const talentList = await client.fetch('*[_type == "talent"]');
   return talentList;
 }
