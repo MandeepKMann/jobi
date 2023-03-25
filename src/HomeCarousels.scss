@@ -90,20 +90,31 @@
     .reviewInner {
         overflow: hidden;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: 8.8%;
+        gap: 40px;
         max-width: 100%;
         white-space: nowrap;
+
+        .reviewCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: transform 0.5s;
+            min-height: 550px;
+            min-width: 740.5px;
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid green;
+        }
     }
 
-    .reviewCard {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        transition: transform 0.5s;
-        width: calc(100% / 2);
+    .reviewInner > :nth-child(even) {
+        background-color: #f9ffe1;
     }
+    .reviewInner > :nth-child(odd) {
+        background-color: $limeGreen;
+    }
+    
 }

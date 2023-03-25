@@ -7,23 +7,25 @@ const HomeCarousels = ({talent, review}) => {
     const [talentSlide, setTalentSlide] = useState(0);
     const [reviewSlide, setReviewSlide] = useState(0);
 
-    const slideLeft = (currentSlide, setCurrentSlide, displayWindow) => {
+    const slideLeft = (currentSlide, setCurrentSlide, maxClicks) => {
         if (currentSlide === 0) {
-            setCurrentSlide(displayWindow - 1)
+            setCurrentSlide(maxClicks - 1)
         } else {
             setCurrentSlide(currentSlide - 1)
         }
     }
 
-    const slideRight = (currentSlide, setCurrentSlide, displayWindow, array) => {
+    const slideRight = (currentSlide, setCurrentSlide, maxClicks, array) => {
         if (currentSlide === (array.length - 1)) {
             setCurrentSlide(0)
-        } else if (currentSlide === (displayWindow - 1)){
+        } else if (currentSlide === (maxClicks - 1)){
             setCurrentSlide(0)
         } else {
             setCurrentSlide(currentSlide + 1)
         }
     }
+
+    console.log(reviewSlide)
 
     return (
         <>
@@ -58,8 +60,8 @@ const HomeCarousels = ({talent, review}) => {
                 <div className="reviewTitle">
                     <h2>Trusted by leading startups.</h2>
                     <div className="talentButtons">
-                        <button className="carouselArrowLeft" tabIndex="1" onClick={() => slideLeft(reviewSlide, setReviewSlide, 2)}>&#8592;</button>
-                        <button className="carouselArrowRight" tabIndex="1" onClick={() => slideRight(reviewSlide, setReviewSlide, 2, review)}>&#8594;</button>
+                        <button className="carouselArrowLeft" tabIndex="1" onClick={() => slideLeft(reviewSlide, setReviewSlide, 4)}>&#8592;</button>
+                        <button className="carouselArrowRight" tabIndex="1" onClick={() => slideRight(reviewSlide, setReviewSlide, 4, review)}>&#8594;</button>
                     </div>
                 </div>
 
@@ -70,7 +72,7 @@ const HomeCarousels = ({talent, review}) => {
                                 <div 
                                     key={company._id}
                                     className="reviewCard"
-                                    style={{ transform: `translateX(-${reviewSlide * 105.5}%)` }}
+                                    style={{ transform: `translateX(-${reviewSlide * 105.35}%)` }}
                                 >
                                     <div className="companyLogo">
                                         <img src={urlFor(company.logo)} alt={`a picture of ${company.company} logo`} />
