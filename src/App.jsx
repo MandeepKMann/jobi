@@ -26,8 +26,10 @@ function App() {
             const reviewList = await getReview()
             setReview(reviewList)
         }
+        fetchReview()
 
     }, [])
+
         // skv8x7GY9wUzAulMq6i2BxbXAFv1Nfmf2WDKc8PjX7kxF8dZMeQ0Dt25ytqep3ciNghKeWlyNCgkbGefVKtlDQDLlWGdxnYteg1WxknQ51fVg282afltMxzKJ5CSuhz6LQ9rCWjLfEOY0dlwSXpiUM9Co8m0ezow2VxRhtE9jouOy2wH3Zvj
 
     const handleChange = (e) => {
@@ -51,6 +53,7 @@ function App() {
                     userSearch={userSearch}
                     setUserSearch={setUserSearch}
                     talent={talent}
+                    review={review}
                 />} 
             />
         </Routes>

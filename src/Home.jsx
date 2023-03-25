@@ -8,7 +8,7 @@ import Guides from "./Guides";
 import JobMatch from "./JobMatch";
 import Footer from "./Footer";
 
-const Home = ({talent}) => {
+const Home = ({talent, review}) => {
     return (
         <>
             <HomeHeader />
@@ -18,6 +18,7 @@ const Home = ({talent}) => {
                 <About />
                 <HomeCarousels 
                     talent={talent}
+                    review={review}
                 />
                 <Collaboration />
                 <Guides />

@@ -2,7 +2,7 @@ import { urlFor } from './sanity';
 import './HomeCarousels.scss';
 import { useState } from 'react';
 
-const HomeCarousels = ({talent}) => {
+const HomeCarousels = ({talent, review}) => {
 
     const [talentSlide, setTalentSlide] = useState(0);
     const [reviewSlide, setReviewSlide] = useState(0);
@@ -58,8 +58,31 @@ const HomeCarousels = ({talent}) => {
                 <div className="reviewTitle">
                     <h2>Trusted by leading startups.</h2>
                     <div className="talentButtons">
-                        <button className="carouselArrowLeft" tabIndex="1" onClick={slideLeft}>&#8592;</button>
-                        <button className="carouselArrowRight" tabIndex="1" onClick={slideRight}>&#8594;</button>
+                        <button className="carouselArrowLeft" tabIndex="1" onClick={() => slideLeft(reviewSlide, setReviewSlide, 2)}>&#8592;</button>
+                        <button className="carouselArrowRight" tabIndex="1" onClick={() => slideRight(reviewSlide, setReviewSlide, 2, review)}>&#8594;</button>
+                    </div>
+                </div>
+
+                <div className="reviewCarousel">
+                    <div className="reviewInner">
+                        {review.map((company) => {
+                            return (
+                                <div 
+                                    key={company._id}
+                                    className="reviewCard"
+                                    style={{ transform: `translateX(-${reviewSlide * 105.5}%)` }}
+                                >
+                                    <div className="companyLogo">
+                                        <img src={urlFor(company.logo)} alt={`a picture of ${company.company} logo`} />
+                                    </div>
+                                    <h3>{company.review}</h3>
+                                    <p><span>{company.name},</span> {company.role}</p>
+                                    <div className="rating">
+                                        <p>{company.rating}</p>
+                                    </div>
+                                </div>
+                            )
+                        })}
                     </div>
                 </div>
 
